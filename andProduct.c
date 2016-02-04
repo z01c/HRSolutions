@@ -31,6 +31,8 @@ int main() {
         scanf("%u%u", &a, &b);
         if (a == 0)
             printf("0\n");
+        else if(a == b)
+            printf("%u\n", a);
         else if(hibit(a) == hibit(b))
             printf("%u\n", andInRange(a,b));
         else
